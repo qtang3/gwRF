@@ -5,7 +5,7 @@
 
 
 # Ctrl + R to run selected lines, Ctrl + L to clear the screen
-a = 531
+a = 531e
 b <- 4.3
 x = 'LSU'
 

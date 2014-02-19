@@ -1,5 +1,4 @@
-dupli_w <- function (data, w)
- {
+dupli_w <- function (data, w) {
      w <- round(100*w/sum(w))
      r <- data[1,]
      for (i in 1:dim(data)[1]) {
@@ -16,13 +15,7 @@ dupli_w <- function (data, w)
 
 
 
-gwRF <-function (formula, data, coords, control, Beta = 1)
-{
-
-#data <- SpatialPointsDataFrame(train_data[,1:2],train_data,proj4string=shp@proj4string)
-#formula=class~x1+x2+x3
-#control=rpart.control(minsplit=10,cp=0.01)
-
+gwRF <-function (formula, data, coords, control, Beta = 1) {
    if (is(data, "Spatial")) {
         if (!missing(coords)) 
             warning("data is Spatial* object, ignoring coords argument")
@@ -45,12 +38,7 @@ gwRF <-function (formula, data, coords, control, Beta = 1)
 
 
 
-gwRF.predict <- function(object, testdata, coords, Beta = 1)
-{
-
-#object=trees1
-#testdata=test_data
-#loc=test_data[,1:2]
+gwRF.predict <- function(object, testdata, coords, Beta = 1) {
    if (is(testdata, "Spatial")) {
         if (!missing(coords)) 
             warning("data is Spatial* object, ignoring coords argument")

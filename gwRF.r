@@ -13,7 +13,7 @@ dupli_w <- function (data, w) {
      z
 }
 
-
+#quan work
 
 gwRF <-function (formula, data, coords, control, Beta = 1) {
    if (is(data, "Spatial")) {
